@@ -8,7 +8,7 @@ const Header = () => {
                     </h1>
                 </div>
                 <div class="nav-button">
-                    <a href = "/" >Populares</a>
+                    <a href = "#/" >Populares</a>
                     <a href = "#/tendencias" >Tendencias</a>
                 </div>
             </div>
