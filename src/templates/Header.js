@@ -8,7 +8,7 @@ const Header = () => {
                     </h1>
                 </div>
                 <div class="button">
-                    <label for="btn-menu">Menú</label>
+                    <label for="btn-menu"><i for="btn-menu" class="fas fa-bars"></i></label>
                 </div>
                 <input type="checkbox" id="btn-menu">
                 <div class="nav-button">
