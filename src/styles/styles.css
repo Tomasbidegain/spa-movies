@@ -15,7 +15,7 @@ body {
     width: 100%;
     padding-top: 65px;
     line-height: 1.5em;
-    background:linear-gradient(#616687, #5f5f5f);;
+    background:linear-gradient(#616687, #5f5f5f);
 }
 
 .header-main {
@@ -160,7 +160,7 @@ body {
 
 .movie-info {
     width: 100%;
-    height: 450px;
+    height: 100%;
     margin: 15px;
 }
 
@@ -264,7 +264,7 @@ body {
 
 
 .movie-info-cast p{
-    height: 101px;
+    height: 260px;
     overflow-y: auto;
     padding-right: 5px;
 }
@@ -282,4 +282,103 @@ body {
 .movie-img:hover {
     transform: scale(1.05);
     box-shadow: 2px 5px 10px #000;
+}
+
+/*Estilos del menu*/
+#btn-menu{
+    display:none;
+}
+.button{
+    float: right;
+    display: none;
+}
+.button label {
+    color:#fff;
+    background: #616687;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/*Responsive design*/
+@media screen and (max-width: 768px){
+    .header-nav{
+        height: 100%;
+    }
+    .nav-titulo .button{
+        line-height: 60px;
+    }
+    .nav-titulo h1{
+        font-size: 30px;
+    }
+    .nav-button a:hover{
+        color: #000;
+    }
+
+    .nav-button{
+        display: inline-block;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background: #616687;
+        top: 65px;
+        left: 0;
+        margin: 0;
+        transition: all 500ms ease;
+        transform: translateX(-105%);
+        border: 1px solid #000;
+        box-shadow:2px 5px 10px #000;
+    }
+    .nav-button a{
+        text-align: start;
+        display: block;
+        color: #000;
+        margin-top: 10px;
+    }
+    #btn-menu:checked ~.nav-button{
+        transform: translateX(0%);
+    }
+
+    .button{
+        display: block;
+        text-align: end;
+        height: 30px;
+        margin-top: 12px;
+    }
+    .section-title{
+        font-size: 20px;
+    }
+    .movie-card{
+        flex-direction: column;
+        margin: auto;
+    }
+    .movie-img{
+        height: 380px;
+        width: 100%;
+        margin: 0;
+    }
+    .grid-movies{
+        padding: 20px;
+    }
+
+    .movie-info{
+        height: 100vh;
+        margin: 5px;
+    }
+    .movie-info-title{
+        font-size: 25px;
+    }
+    .movie-card h3{
+        font-size: 14px;
+    }
+    .movie-card p{
+        font-size: 13px;
+    }
+    .footer{
+        font-size: 13px;
+    }
+    .movie-img:hover {
+        transform: scale(1);
+    }
 }

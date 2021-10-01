@@ -7,6 +7,10 @@ const Header = () => {
                         <a href="#/">MovFlix</a>
                     </h1>
                 </div>
+                <div class="button">
+                    <label for="btn-menu">Menú</label>
+                </div>
+                <input type="checkbox" id="btn-menu">
                 <div class="nav-button">
                     <a href = "#/" >Populares</a>
                     <a href = "#/tendencias" >Tendencias</a>
