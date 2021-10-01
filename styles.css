@@ -363,7 +363,6 @@ body {
     }
 
     .movie-info{
-        height: 100vh;
         margin: 5px;
     }
     .movie-info-title{
@@ -379,6 +378,9 @@ body {
         font-size: 13px;
     }
     .movie-img:hover {
+        transform: scale(1);
+    }
+    .movie-item:hover{
         transform: scale(1);
     }
 }
